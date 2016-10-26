@@ -34,7 +34,7 @@ for( i = array.length - 1; i >= 0; i--) {
     backwards += array[i];
     }
 }
-
+//TEST
 //7. parseInt both the 'value' and the new variable created in Step 6, ensure that both 'value' and the new variable are set to these new parsed values;
 value = parseInt(value);
 backwards = parseInt(backwards);
