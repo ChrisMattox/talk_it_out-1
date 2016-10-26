@@ -1,7 +1,3 @@
-
-
-
-
 //1. Start with the number 42 and set that equal to 'value'
 var value = 42;
 //2. Create condition logic to check if the value is great or equal to 53
@@ -24,15 +20,14 @@ for (var i = 0; i < 4; i++){
 array.pop();
 array.shift();
 
-
 //6. Create a new variable. Loop backwards through the array and store each value into the new Variable, combining each of the values of that array (backwards remember!)
-var backwards;
-for( i = array.length - 1; i >= 0; i--) {
-    if (backwards == undefined){
-        backwards = array[i];
-    } else {
+var backwards = array[array.length -1];
+//console.log(backwards);
+
+for( i = array.length - 2; i >= 0; i--) {
     backwards += array[i];
-    }
+//   console.log(array[i]);
+//   console.log(backwards);
 }
 
 //7. parseInt both the 'value' and the new variable created in Step 6, ensure that both 'value' and the new variable are set to these new parsed values;
@@ -46,15 +41,10 @@ value += backwards;
 //If neither of these are true, set the value to 2.
 
 if (value < 60){
-    
     value = 14;
-    
 }else if(value == 2930){
-
     value = 27;
-    
 }else{
-    
     value = 2;
 }
 
@@ -72,20 +62,13 @@ function convert(val){
     val = val.toString();
     if(val.length > 1){
       val = val.substring(1, val.length); 
-    }
-    
+    } 
     return val;
 }
 
 //12. Call the function.
 value = convert(value);
+
 //13. Console log value. Create an index.html file, link the this Javascript file. Load in the browser, check the value.
-
 console.log(value);
-
-
-
-
 //14. Your answer should be a String value that equals 7. Is that what you got?
-
-array;
